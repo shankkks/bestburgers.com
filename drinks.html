@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Angels Burger</title>
+	<link rel="stylesheet" href="drinks.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<section class="header" >
+		<nav style= "background: #000000;">
+			<a href="index.html"><img src="https://i.ibb.co/27wLfjg/Angel-s-Burger-light.jpg" alt="logo"></a>
+			<div class="nav-links" id="navLinks">
+				<i class="fa fa-times" aria-hidden="true" onclick="hideMenu()"></i>
+				<ul>
+					<li><a href="index.html" >HOME</a></li>
+					<li><a href="menu.html">MENU</a></li>
+					<li><a href="aboutus.html">ABOUT US</a></li>
+				</ul>
+			</div>>
+			<i class="fa fa-bars" aria-hidden="true" onclick="showMenu()"></i>
+		</nav>
+	</section>
+
+
+<section class="snacks">
+	<h1>DRINKS</h1>
+    <p>Refresh yourself with happiness!</p>
+
+	<div class="row">
+		<div class="snacks-col">
+			<img src="https://i.ibb.co/MCvH6pK/royal.jpg" alt="royal">
+            <img src="https://i.ibb.co/JkfZqQJ/sprite.jpg" alt="sprite">
+ 
+		</div>
+		<div class="snacks-col">
+			<h3>Mountain Dew<br>Pepsi<br>Distilled Water<br>Sprite
+            <br>Coke<br>Home Brewed Iced Tea<br>Hot Tea<br>Iced Coffee<br>Hot Coffee</h3>
+		</div>
+		<div class="snacks-col">
+			<img src="https://i.ibb.co/zVJ6rkk/coke.jpg" alt="COKE">
+   
+		</div>
+	</div>
+</section>
+
+
+<section class="footer">
+    <h2>For Today's Menu</h2>
+    <h4>Follow Us On:</h4>
+		<div class="icons">
+		<a href="https://www.facebook.com/angelsburgerph/"><i class="fa fa-facebook-official fa-3x" aria-hidden="true"></i></a>
+		<a href="https://www.instagram.com/angelsburgerph/"><i class="fa fa-instagram fa-3x" aria-hidden="true"></i> </a>
+	</div>
+	<p>Angel's Burger</p>
+
+
+<script>
+	
+	var navLinks = document.getElementById("navLinks");
+	function showMenu(){
+		navLinks.style.right = "0";
+		}
+	function hideMenu(){
+		navLinks.style.right = "-200px";
+		}
+
+</script>
+</body>
+</html>

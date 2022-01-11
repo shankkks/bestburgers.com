@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>ManneFoodServices</title>
+	<link rel="stylesheet" href="groupmeal.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+	<section class="header" >
+		<nav style= "background: #000000;">
+			<a href="index.html"><img src="https://i.ibb.co/27wLfjg/Angel-s-Burger-light.jpg" alt="logo"></a>
+			<div class="nav-links" id="navLinks">
+				<i class="fa fa-times" aria-hidden="true" onclick="hideMenu()"></i>
+				<ul>
+					<li><a href="index.html" >HOME</a></li>
+					<li><a href="menu.html">MENU</a></li>
+					<li><a href="aboutus.html">ABOUT US</a></li>
+				</ul>
+			</div>>
+			<i class="fa fa-bars" aria-hidden="true" onclick="showMenu()"></i>
+		</nav>
+	</section>
+	
+<section class="breakfast">
+	<h1>BREAKFAST</h1>
+	<p>Why not start your day with a full on tummy?</p>
+
+	<div class="row">
+		<div class="breakfast-col">
+			<img src="https://i.ibb.co/pjf5PD9/pancake.jpg" alt="Pancake">
+            <img src="https://i.ibb.co/ScTRMwx/bacon-breakfast-burrito-recipe.jpg" alt="Breakfast Burrito">
+            <img src="https://i.ibb.co/4W6r0m8/hotsilog.jpg" alt="Hotsilog">
+		</div>
+		<div class="breakfast-col">
+			<h3>Sausagesilog<br>Tocilog<br>Silog<br>Bacsilog<br>Chicken & Waffles<br>Oatmeal w/ a twist<br>Pancakes<br>Bacon<br>Breakfast Wrap<br>French Toast<br>Sausage<br>Ham<br>Mango-Peach Swirled Smoothie <br>Fried Tuyo w/ Rice<br>Soy Garlic Chicken Fillet<br> Special Breakfast Burrito<br> Sunrise Sandwich With Turkey, Cheddar, and Guacamole<br>10-Minute Baked Eggs With Mushroom and Spinach</h3>
+            <p>All served with one cup of coffee. Hot/Cold </p>
+		</div>
+		<div class="breakfast-col">
+			<img src="https://i.ibb.co/N95mgLh/muchroom.jpg" alt="Mushroom and Spinach
+">
+            <img src="https://i.ibb.co/SRm5XY3/sausage.jpg" alt="Sausage">
+            <img src="https://i.ibb.co/GnSDHbZ/cheesy-guacamole-1-3.jpg" alt="Guacamole">
+		</div>
+	</div>
+</section>
+
+<section class="footer">
+    <h2>For Today's Menu</h2>
+    <h4>Follow Us On:</h4>
+	<div class="icons">
+<div class="icons">
+		<a href="https://www.facebook.com/angelsburgerph/"><i class="fa fa-facebook-official fa-3x" aria-hidden="true"></i></a>
+		<a href="https://www.instagram.com/angelsburgerph/"><i class="fa fa-instagram fa-3x" aria-hidden="true"></i> </a>
+	</div>
+	<p>Angel's Burger</p>
+</section>
+
+    
+<script>
+	var navLinks = document.getElementById("navLinks");
+	function showMenu(){
+		navLinks.style.right = "0";
+		}
+	function hideMenu(){
+		navLinks.style.right = "-200px";
+		}
+</script>
+</body>
+</html>

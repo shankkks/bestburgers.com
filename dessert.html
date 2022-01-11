@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Angels Burger</title>
+	<link rel="stylesheet" href="dessert.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+		<section class="header" >
+		<nav style= "background: #000000;">
+			<a href="index.html"><img src="https://i.ibb.co/27wLfjg/Angel-s-Burger-light.jpg" alt="logo"></a>
+			<div class="nav-links" id="navLinks">
+				<i class="fa fa-times" aria-hidden="true" onclick="hideMenu()"></i>
+				<ul>
+					<li><a href="index.html" >HOME</a></li>
+					<li><a href="menu.html">MENU</a></li>
+					<li><a href="aboutus.html">ABOUT US</a></li>
+				</ul>
+			</div>>
+			<i class="fa fa-bars" aria-hidden="true" onclick="showMenu()"></i>
+		</nav>
+	</section>
+
+<section class="dinner">
+	<h1>DESSERTS</h1>
+	<p>A few more calories won't hurt</p>
+
+	<div class="row">
+		<div class="dinner-col">
+			<img src="https://i.ibb.co/9pw3jYP/leche.jpg" alt="Leche flan">
+            <img src="https://i.ibb.co/6W09N8F/crea.jpg" alt="cream">		
+		</div>
+		<div class="dinner-col">
+			<h3>Suman<br>Halo-halo<br>Sorbetes<br> Puto Bumbong <br> Leche Flan <br> Ube halaya <br> Turon <br> Banana Cue <br> Apple Pie <br> Mochi <br> Cream Brulee <br> Custard </h3>
+            <p>All served with free bottomless water</p>
+		</div>
+		<div class="dinner-col">
+			<img src="https://i.ibb.co/JKfrG8z/apple.jpg" alt="apple pie">
+            <img src="https://i.ibb.co/101RWgQ/halo.jpg" alt="halo2x">	
+		</div>
+	</div>
+</section>
+
+<section class="footer">
+    <h2>For Today's Menu</h2>
+    <h4>Follow Us On:</h4>
+	<div class="icons">
+		<a href="https://www.facebook.com/angelsburgerph/"><i class="fa fa-facebook-official fa-3x" aria-hidden="true"></i></a>
+		<a href="https://www.instagram.com/angelsburgerph/"><i class="fa fa-instagram fa-3x" aria-hidden="true"></i> </a>
+	</div>
+	<p>Angel's Burger</p>
+</section>
+
+
+
+<script>
+	
+	var navLinks = document.getElementById("navLinks");
+	function showMenu(){
+		navLinks.style.right = "0";
+		}
+	function hideMenu(){
+		navLinks.style.right = "-200px";
+		}
+
+</script>
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Angels Burger</title>
+	<link rel="stylesheet" href="sandwiches.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+	<section class="header" >
+		<nav style= "background: #000000;">
+			<a href="index.html"><img src="https://i.ibb.co/27wLfjg/Angel-s-Burger-light.jpg" alt="logo"></a>
+			<div class="nav-links" id="navLinks">
+				<i class="fa fa-times" aria-hidden="true" onclick="hideMenu()"></i>
+				<ul>
+					<li><a href="index.html" >HOME</a></li>
+					<li><a href="menu.html">MENU</a></li>
+					<li><a href="aboutus.html">ABOUT US</a></li>
+				</ul>
+			</div>>
+			<i class="fa fa-bars" aria-hidden="true" onclick="showMenu()"></i>
+		</nav>
+	</section>
+
+
+<section class="lunch">
+	<h1>BURGER & SANDWICHES</h1>
+    <p>a burger without cheese is like a hug without a squeeze.</p>
+
+	<div class="row">
+		<div class="lunch-col">
+			<img src="https://i.ibb.co/b2B9kLx/bacon-sandwich.jpg" alt="Sandwich">
+            <img src="https://i.ibb.co/TBj5G0B/berger.jpg" alt="cberger">		
+		</div>
+		<div class="lunch-col">
+			<h3>Hamburger <br>Cheeseburger <br> Turkey Burger<br> Ham Sandwich <br> Chicken Burger  Grilled Cheese Sandwich <br>Tuna Sandwich <br> Veggie Burger <br> Beef Burger <br> Double pound beef burger <br>Egg Sandwich <br> Big Mac <br> Juicy Lucy <br> Footlong Sandwich <br> Pork Tenderloin <br> Western Bacon Burger <br> Teriyaki McBurger<br> Chili Burger</h3>
+			<p>----------------------------------- </p>
+            <p>All served with free bottomless Iced-tea!</p>
+            <p>----------------------------------- </p>
+		</div>
+		<div class="lunch-col">
+			<img src="https://i.ibb.co/99TkM12/barager.jpg" alt="burger">
+        
+		</div>
+	</div>
+</section>
+
+
+<section class="footer">
+    <h2>For Today's Menu</h2>
+    <h4>Follow Us On:</h4>
+	<div class="icons">
+		<div class="icons">
+		<a href="https://www.facebook.com/angelsburgerph/"><i class="fa fa-facebook-official fa-3x" aria-hidden="true"></i></a>
+		<a href="https://www.instagram.com/angelsburgerph/"><i class="fa fa-instagram fa-3x" aria-hidden="true"></i> </a>
+	</div>
+	<p>Angel's Burger</p>
+</section>
+
+
+<script>
+	
+	var navLinks = document.getElementById("navLinks");
+	function showMenu(){
+		navLinks.style.right = "0";
+		}
+	function hideMenu(){
+		navLinks.style.right = "-200px";
+		}
+
+</script>
+</body>
+</html>

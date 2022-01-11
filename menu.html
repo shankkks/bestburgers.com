@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Angel's Burger</title>
+	<link rel="shortcut icon" href="https://i.ibb.co/gR8QmFw/Angel-s-Logo.jpg"/>
+	<link rel="stylesheet" href="menu.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+
+
+<body>
+	<section class="header" >
+		<nav style= "background: #000000;">
+			<a href="index.html"><img src="https://i.ibb.co/27wLfjg/Angel-s-Burger-light.jpg" alt="logo"></a>
+			<div class="nav-links" id="navLinks">
+				<i class="fa fa-times" aria-hidden="true" onclick="hideMenu()"></i>
+				<ul>
+					<li><a href="index.html" >HOME</a></li>
+					<li><a href="menu.html">MENU</a></li>
+					<li><a href="aboutus.html">ABOUT ME</a></li>
+					<li><a href= "form.html" class = button primary>SIGN UP</a></li>
+				</ul>
+			</div>>
+			<i class="fa fa-bars" aria-hidden="true" onclick="showMenu()"></i>
+		</nav>
+	</section>
+
+
+<section class="foods">
+	<h1>Menu</h1>
+	<br><br>
+
+	<div class="row">
+		<div class="foods-col">
+			<h3>SANDWICHES</h3>
+			<a href="sandwiches.html"><img src="https://i.ibb.co/tDw9YgQ/hotdogsandwich.jpg" alt="homemade sardines"></a>
+		</div>
+		<div class="foods-col">
+			<h3>GROUP MEALS</h3>
+			<a href="groupmeal.html"><img src="https://i.ibb.co/DQw0wqc/burgersandwich3.jpg" alt="stir fry pork"></a>
+		</div>
+		<div class="foods-col">
+			<h3>DESSERTS</h3>
+			<a href="dessert.html"><img src=" https://i.ibb.co/Y0tzQrS/DESSERT.jpg" alt="pork humba"></a>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="foods-col">
+			<h3>SNACKS</h3>
+            <a href="snacks.html"><img src="https://i.ibb.co/0h24Snq/snakcs.jpg" alt="lugaw overload"></a>
+		</div>
+		<div class="foods-col">
+			<h3>DRINKS</h3>
+			<a href="drinks.html"><img src="https://i.ibb.co/ZmLpmqv/icedtea.jpg" alt="club house sandwich"></a>
+		</div>
+		<div class="foods-col">
+			<h3>ADD ONS</h3>
+			<a href="addon.html"><img src="https://i.ibb.co/YQ4MMGw/addons.jpg" alt="jelly drinks and leche flan"></a>
+		</div>
+	</div>
+
+</section>
+
+
+<script>
+	
+	var navLinks = document.getElementById("navLinks");
+	function showMenu(){
+		navLinks.style.right = "0";
+		}
+	function hideMenu(){
+		navLinks.style.right = "-200px";
+		}
+</script>
+    <!-- Messenger Chat Plugin Code -->
+    <div id="fb-root"></div>
+
+    <!-- Your Chat Plugin code -->
+    <div id="fb-customer-chat" class="fb-customerchat">
+    </div>
+
+    <script>
+      var chatbox = document.getElementById('fb-customer-chat');
+      chatbox.setAttribute("page_id", "322519905837725");
+      chatbox.setAttribute("attribution", "biz_inbox");
+
+      window.fbAsyncInit = function() {
+        FB.init({
+          xfbml            : true,
+          version          : 'v11.0'
+        });
+      };
+
+      (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+    </script>
+</body>
+</html>

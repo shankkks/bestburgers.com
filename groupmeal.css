@@ -1,0 +1,142 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: 'Poppins', sans-serif;
+}
+
+nav{
+	display: flex;
+	padding: 0;
+	justify-content: space-between;
+	align-items: center;
+}
+nav img{
+	width: 200px;	
+	padding-top: 10px;
+	padding-left: 25px;
+}
+.nav-links{
+	flex: 1;
+	text-align: right;
+}
+.nav-links ul li{
+	list-style: none;
+	display: inline-block;
+	padding: 12px 15px;
+	position: relative;
+}
+.nav-links ul li a{
+	color: #C1C1C1;
+	text-decoration: none;
+	font-size: 16px;
+	font-weight: 200px;
+	
+}
+.nav-links ul li::after{
+	content: '';
+	width: 0%;
+	height: 2px;
+	display: block;
+	margin: auto;
+	transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+	width: 100%;
+}
+
+  nav .fa{
+  	display: none;
+  }
+
+@media only screen and (max-width: 768px){
+	.nav-links ul li{
+		display: block;
+	}
+	.nav-links{
+		position: absolute;
+		background: #000000;
+		height: 100vh;
+		width: 200px;
+		top: 0;
+		right: -200px;
+		text-align: left;
+		z-index: 2;
+		transition: 1s;
+	}
+	nav .fa{
+		display: block;
+		color: #C1C1C1;
+		margin: 10px;
+		font-size: 22px;
+		cursor: pointer;
+	}
+	.nav-links ul{
+		padding: 30px;	
+	}	
+}
+
+/*----- breakfast page -----*/
+.row{
+	margin-top: 5%;
+	display: inline-flex;
+	justify-content: space-between;
+}
+
+.breakfast{
+	width: 80%;
+	margin: auto;
+	text-align: center;
+	padding-top: 30px;
+}
+h1{
+    font-size: 36px;
+    font-weight: 600;
+}
+p{
+    color: #000;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 22px;
+    padding: 10px;   
+}
+
+.breakfast-col{
+	flex-basis: 31%;
+	border-radius: 10px;
+	margin-bottom: 5%;
+	text-align: left;
+}
+.breakfast-col img{
+	width: 100%;
+	border-radius: 10px;
+}
+
+.breakfast-col p{
+	padding: 0;
+    text-align: center;
+    font-weight: 600;
+}
+.breakfast-col h3{
+	margin-top: 50px;
+	margin-bottom: 15px;
+	text-align: center;
+}
+@media only screen and (max-width: 768px){
+	.row{
+		flex-direction: column;
+	}
+}
+
+/*----- footer -----*/
+
+.footer{
+	width: 100%;
+	text-align: center;
+	padding: 30px 0;
+}
+.icons .fa{
+	color: #000000;
+	margin: 0 5px;
+	cursor: pointer;
+	padding: 5px 0;
+}

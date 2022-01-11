@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Angels Burger</title>
+	<link rel="stylesheet" href="snacks.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+	<section class="header" >
+		<nav style= "background: #000000;">
+			<a href="index.html"><img src="https://i.ibb.co/27wLfjg/Angel-s-Burger-light.jpg" alt="logo"></a>
+			<div class="nav-links" id="navLinks">
+				<i class="fa fa-times" aria-hidden="true" onclick="hideMenu()"></i>
+				<ul>
+					<li><a href="index.html" >HOME</a></li>
+					<li><a href="menu.html">MENU</a></li>
+					<li><a href="aboutus.html">ABOUT US</a></li>
+				</ul>
+			</div>>
+			<i class="fa fa-bars" aria-hidden="true" onclick="showMenu()"></i>
+		</nav>
+	</section>
+
+
+<section class="comfortfoods">
+	<h1>SNACKS</h1>
+	<p>Every individual deserves a quick break, our menu gives provides health and delicious snacks to boost you along the day</p>
+
+	<div class="row">
+		<div class="comfortfoods-col">
+			<img src="https://i.ibb.co/hsjWcPK/snacks-in-america.jpg" alt="plain lugaw">	
+		</div>
+		<div class="comfortfoods-col">
+			<h3>Flavored Potato chips<br>Tortilla chips<br>Corn chips<br>
+        Lugaw Overload Special w/ Egg<br>Flavored Popcorn<br>Chocolate Bits<br>Candy Bits<br> </h3>
+		</div>
+		<div class="comfortfoods-col">
+			<img src="https://i.ibb.co/DfMgKbC/snacks.jpg" alt="snak">
+		</div>
+	</div>
+</section>
+
+
+<section class="footer">
+    <h4>Follow Us On:</h4>
+	<div class="icons">
+		<a href="https://www.facebook.com/Simplymealfoodservices/"><i class="fa fa-facebook-official fa-2x" aria-hidden="true"></i></a>
+		<a href="https://www.instagram.com/Simplymealfoodservices/"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a>
+	</div>
+	<p>Angel's Burger</p>
+</section>
+
+
+<script>
+	
+	var navLinks = document.getElementById("navLinks");
+	function showMenu(){
+		navLinks.style.right = "0";
+		}
+	function hideMenu(){
+		navLinks.style.right = "-200px";
+		}
+
+</script>
+</body>
+</html>

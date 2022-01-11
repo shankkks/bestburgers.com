@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">  
+<head>
+    <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="Burger" content="Affordable">
+    <meta name="Eatery" content="Meal, Rice, Sandwich">
+   	<meta name="Owner" content="MJ, Mark Justin">
+	<title>Angel's Burger</title>
+	<link rel="shortcut icon" href="https://i.ibb.co/gR8QmFw/Angel-s-Logo.jpg"/>
+	<link rel="stylesheet" href="homepage.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">  
+</head>
+<body>
+	<section class="header">
+		<nav style= "background: #000000;">
+			<a href="index.html"><img src="https://i.ibb.co/27wLfjg/Angel-s-Burger-light.jpg" alt="angels-burger"></a>
+			<div class="nav-links" id="navLinks">
+				<i class="fa fa-times" aria-hidden="true" onclick="hideMenu()"></i>
+				<ul>
+					<li><a href="index.html" >HOME</a></li>
+					<li><a href="menu.html">MENU</a></li>
+					<li><a href="aboutus.html">ABOUT ME</a></li>
+					<li><a href= "form.html" class = button primary>SIGN UP</a></li>
+				</ul>
+			</div>
+			<i class="fa fa-bars" aria-hidden="true" onclick="showMenu()"></i>
+		</nav>
+    </section>
+        <!-- Messenger Chat Plugin Code -->
+    <div id="fb-root"></div>
+
+    <!-- Your Chat Plugin code -->
+    <div id="fb-customer-chat" class="fb-customerchat"></div>
+    
+    <script>
+      var chatbox = document.getElementById('fb-customer-chat');
+      chatbox.setAttribute("page_id", "322519905837725");
+      chatbox.setAttribute("attribution", "biz_inbox");
+
+      window.fbAsyncInit = function() {
+        FB.init({
+          xfbml            : true,
+          version          : 'v11.0'
+        });
+      };
+
+      (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+    </script>
+    	<a href="index.html"><img src="https://i.ibb.co/gV9DZT0/angels.png" id="homelogo" ></a>
+	
+	<div class="text-box">	
+		
+        <h3> The Best Burger in Cavite </h3>
+		<p>Angel's burger is one of the best burger company in the Philippines that has been serving for 24 years. </p>
+		<br>
+		
+		<h3> Our Mission </h3>
+		<p>
+		To serve happiness to our customers through delicious, quality burgers 
+		<br> and extraordinary restaurant experience while working toward the greater
+		<br>good for our employees, community and environment.
+		</p>
+		
+		<h3> Our Vision </h3>
+		<p>
+		To delight and please our customers with healthy,  
+		<br> quality and delicious burgers and excellent service at
+		<br> a reasonable price.
+		</p>
+	</div>
+	
+	
+	
+<br><br><br><br>
+    <a href="index.html" ><img src="https://i.ibb.co/hDbnbRW/it0043-homepage.jpg" id="collage"></a>
+
+	
+	
+			
+    <section class="footer">
+    <h1>For Educational Purposes Only</h1>
+    <h4>Follow Us On:</h4>
+	<div class="icons">
+		<a href="https://www.facebook.com/angelsburgerph/"><i class="fa fa-facebook-official fa-3x" aria-hidden="true"></i></a>
+		<a href="https://www.instagram.com/angelsburgerph/"><i class="fa fa-instagram fa-3x" aria-hidden="true"></i> </a>
+	</div>
+	<p>Angel's Burger</p>
+</section>      
+<script>
+	
+	var navLinks = document.getElementById("navLinks");
+	function showMenu(){
+		navLinks.style.right = "0";
+		}
+	function hideMenu(){
+		navLinks.style.right = "-200px";
+		}
+</script>   
+</body>
+</html>
